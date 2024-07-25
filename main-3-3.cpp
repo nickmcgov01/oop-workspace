@@ -1,3 +1,6 @@
+#include<iostream>
+int weighted_average(int array[], int n);
+
 int main() {
     int n;
 

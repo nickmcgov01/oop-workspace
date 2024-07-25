@@ -1,3 +1,5 @@
+#include<iostream>
+int num_count(int array[], int n);
 int main() {
 
     int array[] = {1, 2, 3, 4, 5};

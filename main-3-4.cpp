@@ -1,4 +1,5 @@
-
+#include<iostream>
+int print_pass_fail(char grade);
 int main() {
     char grade;
     fprintf(stdout, "Enter grade:\n");

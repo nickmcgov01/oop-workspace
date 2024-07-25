@@ -1,3 +1,5 @@
+#include<iostream>
+int count_evens(int number);
 int main() {
     int number;
     fprintf(stdout, "Enter a number: ");
