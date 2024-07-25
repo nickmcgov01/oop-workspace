@@ -1,14 +1,14 @@
-#include<iostream>
+#include <iostream>
 
-int sum_two_arrays(int array[], int secondarray[], int n){
-    int sum1 = 0;
-    for (int i = 0; i < n; i ++){
-        sum1 += array[i];
+int sum_two_arrays(int array[], int secondarray[], int n) {
+    if (n < 1) {
+        return 0;
     }
-    int sum2;
-    for (int j = 0; j < n; j++){
-        sum2 += secondarray[j];
+
+    int sum = 0;
+    for (int i = 0; i < n; ++i) {
+        sum += array[i] + secondarray[i];
     }
-    int sum3= sum1 + sum2;
-    return sum3;
+
+    return sum;
 }
