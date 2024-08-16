@@ -1,6 +1,27 @@
+// function-1-3.cpp
+
 #include "Person.h"
 
-PersonList deepCopyPersonList(PersonList pl){
+PersonList createPersonList(int n) {
+    // Allocate memory for n Person structs
+    Person* persons = new Person[n];
+
+    // Initialize each Person struct with "Jane Doe" and age 1
+    for (int i = 0; i < n; ++i) {
+        persons[i].name = "Jane Doe";
+        persons[i].age = 1;
+    }
+
+    // Create a PersonList struct and set its fields
+    PersonList personList;
+    personList.people = persons;
+    personList.numPeople = n;
+
+    // Return the PersonList struct
+    return personList;
+}
+
+PersonList deepCopyPersonList(PersonList pl) {
     PersonList newPersonList;
     
     // Allocate memory for a new array of Person structs
@@ -17,5 +38,4 @@ PersonList deepCopyPersonList(PersonList pl){
     
     // Return the new PersonList struct
     return newPersonList;
-
 }
