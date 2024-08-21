@@ -1,27 +1,17 @@
 #include "Cage.h"
-#include "string"
 
-class Cage {
-private:
-    std::string name;
-    int number;
 
-public:
-    
-    Cage(){} 
-    
-    Cage::Cage(std::string newName, int newNumber){
-    name = newName; 
-    number = newNumber;
-    }
+Cage::Cage() : name(""), number(0) {}
 
-    std::string getName() {
-        return name;
-    }
+Cage::Cage(std::string newName, int newNumber) : name(newName), number(newNumber) {}
 
-    int getIDnum() {
-        return number;
-    }
+std::string Cage::getName() {
+    return name;
+}
 
-    ~Cage() {}
-};
+
+int Cage::getIDnum() {
+    return number;
+}
+
+Cage::~Cage() {}
