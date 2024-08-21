@@ -1,4 +1,6 @@
-#pragma once
+#ifndef CLINIC_H
+#define CLINIC_H
+
 #include "Cage.h"
 #include <string>
 
@@ -30,3 +32,4 @@ public:
  
     ~Clinic();
 };
+#endif

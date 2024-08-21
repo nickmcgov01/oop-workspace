@@ -1,5 +1,6 @@
 // cage header file
-#pragma once
+#ifndef CAGE_H
+#define CAGE_H
 #include <string>
 #include <iostream>
 
@@ -11,12 +12,11 @@ class Cage {
     public:
       
         Cage();  
-        Cage(std::string newName, int newNumber);  // Parameterized constructor
+        Cage(std::string newName, int newNumber);  
 
-        
         std::string getName(); 
         int getIDnum();
         
-       
         ~Cage(); 
 };  
+#endif
