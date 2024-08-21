@@ -15,6 +15,7 @@ class Cage {
 
         
         std::string getName(); 
+        int getIDnum();
         
        
         ~Cage(); 
