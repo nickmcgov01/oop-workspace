@@ -2,5 +2,8 @@
 #include<iostream>
 int main(void){
     Cage c1;
-    std::cout >>
+    c1.Cage("Bob", 10);
+    c1.getName();
+    c1.getIDnum();
+
 }
