@@ -1,5 +1,5 @@
 #include "Cage.h"
-#include <string>
+#include "string"
 
 class Cage {
 private:
@@ -8,9 +8,12 @@ private:
 
 public:
     
-    Cage() : name(""), number(0) {}
-
-    Cage(std::string newName, int newNumber) : name(newName), number(newNumber) {}
+    Cage(){} 
+    
+    Cage::Cage(std::string newName, int newNumber){
+    name = newName; 
+    number = newNumber;
+    }
 
     std::string getName() {
         return name;
