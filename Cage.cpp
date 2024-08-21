@@ -1,5 +1,6 @@
 #include "Cage.h"
 #include <string>
+class Cage{
 Cage(){
     name = ""
     number = 0;
@@ -13,4 +14,6 @@ std::string getName(){
 }
 int getIDnum(){
     return number;
+}
+~Cage()
 }
