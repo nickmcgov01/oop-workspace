@@ -1,12 +1,32 @@
-#pragma 1
-#include<string>
-#include<iostream>
-class Clinic{
-  Clinic();
-  Clinic(std::string name, int max_size);
-  int getNumber_of_cages();
-  std::string getName();
-  Cage* getCages();
-    
+#pragma once
+#include "Cage.h"
+#include <string>
 
-}
+class Clinic {
+private:
+    std::string name;
+    int max_size;
+    int current_size;
+    Cage* cages; 
+public:
+  
+    Clinic();
+
+   
+    Clinic(std::string clinicName, int maxSize);
+
+   
+    int getNumberOfCages() const;
+
+    
+    std::string getName() const;
+
+   
+    Cage* getCages() const;
+
+   
+    bool addCage(Cage newCage);
+
+ 
+    ~Clinic();
+};
