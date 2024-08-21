@@ -1,4 +1,5 @@
 #include "Clinic.h"
+#include "Cage.h"
 #include <iostream>
 
 int main() {
@@ -12,12 +13,7 @@ int main() {
     
    
     Cage cage4("Giraffe Cage", 4);
-    std::cout << (clinic.addCage(cage4) ? "Cage 4 added." : "Cage 4 not added.") << std::endl;
 
-    
-    std::cout << "Number of cages: " << clinic.getNumberOfCages() << std::endl;
-
-    std::cout << "Clinic name: " << clinic.getName() << std::endl;
 
 
     Cage* cages = clinic.getCages();
