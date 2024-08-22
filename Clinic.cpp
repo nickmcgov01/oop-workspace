@@ -5,21 +5,23 @@
 
 Clinic::Clinic() : name(""), max_size(0), current_size(0), cages(nullptr) {}
 
-Clinic::Clinic(std::string clinicName, int maxSize) : name(clinicName), max_size(maxSize), current_size(0) {
+Clinic::Clinic(std::string clinicName, int maxSize){
+    name = clinicName;
+    max_size = maxSize;
     cages = new Cage[max_size];
 }
 
 
-int Clinic::getNumberOfCages() const {
+int Clinic::getNumberOfCages(){
     return current_size;
 }
 
-std::string Clinic::getName() const {
+std::string Clinic::getName(){
     return name;
 }
 
 
-Cage* Clinic::getCages() const {
+Cage* Clinic::getCages(){
     return cages;
 }
 

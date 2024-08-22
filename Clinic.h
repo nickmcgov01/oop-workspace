@@ -18,13 +18,13 @@ public:
     Clinic(std::string clinicName, int maxSize);
 
    
-    int getNumberOfCages() const;
+    int getNumberOfCages();
 
     
-    std::string getName() const;
+    std::string getName();
 
    
-    Cage* getCages() const;
+    Cage* getCages();
 
    
     bool addCage(Cage newCage);
