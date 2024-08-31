@@ -4,7 +4,7 @@
 
 
 Vehicle::Vehicle(int ID) : ID(ID) {
-    timeOfEntry = std::time(nullptr); 
+    timeOfEntry = std::time(nullptr) - 10000; 
 }
 
 
@@ -14,5 +14,5 @@ int Vehicle::getID() {
 
 
 
-// Constructor for Motorbike class
+
 
