@@ -4,7 +4,7 @@
 
 
 Vehicle::Vehicle(int ID) : ID(ID) {
-    timeOfEntry = std::time(nullptr) - 10000; 
+    timeOfEntry = std::time(nullptr); 
 }
 
 
