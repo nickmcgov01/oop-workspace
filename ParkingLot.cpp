@@ -11,9 +11,8 @@ void ParkingLot::parkVehicle(Vehicle* vehicle) {
     if (currentCount < maxCapacity) {
         vehicles.push_back(vehicle);
         currentCount++;
-        std::cout << "Vehicle parked successfully." << std::endl;
     } else {
-        std::cout << "The lot is full." << std::endl;
+        std::cout << "The lot is full" << std::endl; // Removed extra period to match expected output
     }
 }
 
@@ -23,11 +22,10 @@ void ParkingLot::unparkVehicle(int ID) {
             delete *it;
             vehicles.erase(it);
             currentCount--;
-            std::cout << "Vehicle removed from the lot." << std::endl;
             return;
         }
     }
-    std::cout << "Vehicle not in the lot." << std::endl;
+    std::cout << "Vehicle not in the lot" << std::endl; // Removed extra period to match expected output
 }
 
 int ParkingLot::countOverstayingVehicles(int maxParkingDuration) {
