@@ -8,6 +8,7 @@ class Appliance {
     public:
         bool get_isOn();
         Appliance();
+        Appliance(int powerRating);
         void turnOn();
         void turnOff();
         int get_PowerRating();
