@@ -11,8 +11,8 @@ class Appliance {
         Appliance(int powerRating);
         void turnOn();
         void turnOff();
-        int get_PowerRating();
-        void set_PowerRating(int rating);
+        int get_powerRating();
+        void set_powerRating(int rating);
         virtual double getPowerConsumption();
 };
 
