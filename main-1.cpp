@@ -2,12 +2,9 @@
 #include "Helper.hpp"
 
 int main(){
-    
-    i1.setCoordinates(10,15);
-
-
-
-
-
+    GridItem item1;
+    item1.setCoordinates(10,15);
+    item1.getGridHeight();
+    item1.getGridWidth();
     return 0;
 }
