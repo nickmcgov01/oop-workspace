@@ -11,10 +11,14 @@ class Interactable : public GridItem {
         Coordinates(make_pair){
 
         }
-        bool interact(Scientist* player);
-        InteractableType getType(){
-            return player;
+        virtual bool interact(Scientist* player){
+             InteractableType(player) = 0
         }
+
+        InteractableType getType(){
+            return 
+        }
+
 
 
 

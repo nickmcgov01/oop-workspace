@@ -6,9 +6,10 @@ class Scientist : public GridItem {
     int experimentCount;
 
     public:
-    Scientist();
+    Scientist(){}
     Scientist(int gridWidth, int GridHeight): 
-    GridItem(width, height){}
+    (gridWidth(0), gridHeight(0)), experimentCount(0) {}
+   
 
     int getExperimentCount(){
         return experimentCount;
