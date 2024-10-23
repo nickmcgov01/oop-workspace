@@ -8,7 +8,13 @@ class Interactable : public GridItem {
         };
 
         Interactable::Interactable(int x, int y, int width, int height):
-        Coordinates(make_pair)
+        Coordinates(make_pair){
+
+        }
+        bool interact(Scientist* player);
+        InteractableType getType(){
+            return player;
+        }
 
 
 
