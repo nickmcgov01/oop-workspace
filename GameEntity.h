@@ -13,12 +13,12 @@ public:
         ShipType
     };
 
-private:
+protected:
     std::tuple<int, int> position;
-    GameEntityType entityType;  // Renamed member variable to avoid shadowing
+    GameEntityType entityType;  
 
 public:
-    // Constructor using initializer list
+   
     GameEntity(int x, int y, GameEntityType type)
         : position(std::make_tuple(x, y)), entityType(type) {}
 
